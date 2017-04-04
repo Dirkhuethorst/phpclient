@@ -140,6 +140,7 @@ class SolutionApi
         if ($key !== null) {
             $queryParams['key'] = $this->apiClient->getSerializer()->toQueryValue($key);
         }
+            echo "TESTERDETEST " . $resourcePath;
         // path params
         if ($job_id !== null) {
             $resourcePath = str_replace(
