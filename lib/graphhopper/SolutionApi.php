@@ -142,6 +142,7 @@ class SolutionApi
         }
             
         // path params
+        echo "TestJobID: " . $job_id;
         if ($job_id !== null) {
             $resourcePath = str_replace(
                 "{" . "jobId" . "}",
