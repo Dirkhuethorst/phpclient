@@ -109,7 +109,7 @@ class Configuration
      *
      * @var bool
      */
-    protected $debug = true;
+    protected $debug = false;
 
     /**
      * Debug file location (log to STDOUT by default)
