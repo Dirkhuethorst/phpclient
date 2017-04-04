@@ -168,7 +168,7 @@ class VrpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\JobId',
+                'Swagger\Client\Model\JobId',
                 '/optimize'
             );
 
