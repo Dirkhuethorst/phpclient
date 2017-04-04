@@ -142,7 +142,7 @@ class SolutionApi
         }
             
         // path params
-        echo "TestJobID: " . $job_id;
+        
         if ($job_id !== null) {
             $resourcePath = str_replace(
                 "{" . "jobId" . "}",
@@ -152,7 +152,7 @@ class SolutionApi
             );
         }
         // default format to json
-        echo "TESTERDETEST " . $resourcePath;
+       
         //$resourcePath = str_replace("{format}", "json", $resourcePath);
 
         
