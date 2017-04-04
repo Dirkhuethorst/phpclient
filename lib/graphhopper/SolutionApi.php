@@ -145,13 +145,14 @@ class SolutionApi
         if ($job_id !== null) {
             $resourcePath = str_replace(
                 "{" . "jobId" . "}",
-                $this->apiClient->getSerializer()->toPathValue($job_id),
-                $resourcePath
+                //$this->apiClient->getSerializer()->toPathValue($job_id),
+                $job_id,
+                $resourcePath                
             );
         }
         // default format to json
         echo "TESTERDETEST " . $resourcePath;
-        $resourcePath = str_replace("{format}", "json", $resourcePath);
+        //$resourcePath = str_replace("{format}", "json", $resourcePath);
 
         
         // for model (json/xml)
