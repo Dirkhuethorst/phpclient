@@ -145,6 +145,7 @@ class Activity implements ArrayAccess
     const TYPE_DELIVER_SHIPMENT = 'deliverShipment';
     const TYPE_PICKUP = 'pickup';
     const TYPE_DELIVERY = 'delivery';
+    const TYPE_BREAK = 'break';
     
 
     
@@ -162,6 +163,7 @@ class Activity implements ArrayAccess
             self::TYPE_DELIVER_SHIPMENT,
             self::TYPE_PICKUP,
             self::TYPE_DELIVERY,
+            self::TYPE_BREAK,
         ];
     }
     
