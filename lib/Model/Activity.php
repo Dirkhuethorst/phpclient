@@ -240,9 +240,9 @@ class Activity implements ArrayAccess
      */
     public function setType($type)
     {
-        $allowed_values = array('start', 'end', 'service', 'pickupShipment', 'deliverShipment', 'pickup', 'delivery');
+        $allowed_values = array('start', 'end', 'service', 'pickupShipment', 'deliverShipment', 'pickup', 'delivery', 'break');
         if (!is_null($type) && (!in_array($type, $allowed_values))) {
-            throw new \InvalidArgumentException("Invalid value for 'type', must be one of 'start', 'end', 'service', 'pickupShipment', 'deliverShipment', 'pickup', 'delivery'");
+            throw new \InvalidArgumentException("Invalid value for 'type', must be one of 'start', 'end', 'service', 'pickupShipment', 'deliverShipment', 'pickup', 'delivery', 'break'");
         }
         $this->container['type'] = $type;
 
